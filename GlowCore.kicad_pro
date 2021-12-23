@@ -367,7 +367,7 @@
       "idf": "",
       "netlist": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "GlowCore.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""
