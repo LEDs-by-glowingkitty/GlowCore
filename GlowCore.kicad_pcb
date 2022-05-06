@@ -9476,7 +9476,7 @@
   (gr_text "designed by" (at 134.1374 70.4088) (layer "B.SilkS") (tstamp 0d6a095a-67ab-40fd-badd-3faa28901dda)
     (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left mirror))
   )
-  (gr_text "dev board v1.1" (at 134.1628 67.7672) (layer "B.SilkS") (tstamp 21d7241d-19ac-4fd6-8289-87468c3270bf)
+  (gr_text "dev board v1.0 beta 1" (at 134.1628 67.7672) (layer "B.SilkS") (tstamp 21d7241d-19ac-4fd6-8289-87468c3270bf)
     (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left mirror))
   )
   (gr_text "GlowCore" (at 134.5946 65.532) (layer "B.SilkS") (tstamp 23496641-a5e3-45ec-8721-2d05993ac50a)
