@@ -1,4 +1,4 @@
-![GlowCore](pcb_3d_model.jpg)
+![GlowCore](MainPCB/pcb_3d_model.jpg)
 
 
 # GlowCore
@@ -9,7 +9,7 @@ This project is currently under active development and has not been fully tested
 
 ## What is this project?
 
-A custom PCB design for controlling my LED projects. Connect up to 4 LED strips, program the integrated ESP32, and power everything via USB-C or a lipo battery.
+An LED development board. To which you can easily connect LED strips, buttons and other extensions!
 
-![GlowCore](pcb_front.jpg)
-![GlowCore](pcb_back.jpg)
+![GlowCore](MainPCB/pcb_front.jpg)
+![GlowCore](MainPCB/pcb_back.jpg)
