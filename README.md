@@ -1,4 +1,4 @@
-![GlowCore](MainPCB/pcb_3d_model.jpg)
+![GlowCore](images/header.jpg)
 
 
 # GlowCore
