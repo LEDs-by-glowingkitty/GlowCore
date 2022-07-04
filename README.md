@@ -10,3 +10,7 @@ An LED development board. To which you can easily connect LED strips, buttons an
 
 ![GlowCore](MainPCB/pcb_front.jpg)
 ![GlowCore](MainPCB/pcb_back.jpg)
+
+## Links
+
+- [3D models](https://grabcad.com/library/glowcore-1)
