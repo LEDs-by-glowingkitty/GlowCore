@@ -33,3 +33,4 @@ fp-info-cache
 *.dxf
 
 *.step
+*.gcode
