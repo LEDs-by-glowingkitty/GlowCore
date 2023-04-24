@@ -1,0 +1,84 @@
+{
+    "versions": [{
+        "select_value": "glowcore_v3_0",
+        "select_content": "GlowCore v3.0"
+    },
+    {
+        "select_value": "glowcore_v2_0",
+        "select_content": "GlowCore v2.0"
+    },
+    {
+        "select_value": "glowcore_v1_0",
+        "select_content": "GlowCore v1.0"
+    }
+    ],
+    "glowcore_v3_0": {
+        "git_link": "",
+        "downloadlink_base": "",
+        "content": [{
+            "name": "Quick Start Guide",
+            "filetype": "pdf",
+            "updated": "",
+            "size": "",
+            "downloadlink_file": ""
+        }, {
+            "name": "PCB Pinout",
+            "filetype": "pdf",
+            "updated": "",
+            "size": "",
+            "downloadlink_file": ""
+        }, {
+            "name": "Manual",
+            "filetype": "pdf",
+            "updated": "",
+            "size": "",
+            "downloadlink_file": ""
+        }]
+    },
+    "glowcore_v2_0": {
+        "git_link": "",
+        "downloadlink_base": "",
+        "content": [{
+            "name": "Quick Start Guide",
+            "filetype": "pdf",
+            "updated": "",
+            "size": "",
+            "downloadlink_file": ""
+        }, {
+            "name": "PCB Pinout",
+            "filetype": "pdf",
+            "updated": "",
+            "size": "",
+            "downloadlink_file": ""
+        }, {
+            "name": "Manual",
+            "filetype": "pdf",
+            "updated": "",
+            "size": "",
+            "downloadlink_file": ""
+        }]
+    },
+    "glowcore_v1_0": {
+        "git_link": "",
+        "downloadlink_base": "",
+        "content": [{
+            "name": "Quick Start Guide",
+            "filetype": "pdf",
+            "updated": "",
+            "size": "",
+            "downloadlink_file": ""
+        }, {
+            "name": "PCB Pinout",
+            "filetype": "pdf",
+            "updated": "",
+            "size": "",
+            "downloadlink_file": ""
+        }, {
+            "name": "Manual",
+            "filetype": "pdf",
+            "updated": "",
+            "size": "",
+            "downloadlink_file": ""
+        }]
+    }
+}
