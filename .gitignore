@@ -35,3 +35,6 @@ fp-info-cache
 
 *.step
 *.gcode
+
+cnc
+lasercutter
