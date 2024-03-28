@@ -1,0 +1,68 @@
+from "generics/interfaces.ato" import Power, UART, I2C, SPI, I2S, JTAG, USB2, USB_PD
+import ESP32_WROOM_32E_N8R2 from "parts/microcontrollers/ESP32-WROOM-32E-N8R2.ato"
+import CP2102N from "parts/usb_to_serial/CP2102N.ato"
+
+module Glowcore:
+    """
+    This it the PCB for the GlowCore development board.
+
+    Production settings:
+    - Layers:           6
+    - PCB Thickness:    1.6mm
+    - PCB Color:        Black
+    - Surface Finish:   ENIG
+
+    PCBA Assembly:
+    - leave with default options
+    """
+
+    # Add power
+    power_5v = new Power
+    power_3_3v = new Power
+    signal gnd ~ power_5v.gnd
+    gnd ~ power_3_3v.gnd
+
+    # Add interfaces
+    uart = new UART
+    i2c = new I2C
+    i2s = new I2S
+    spi = new SPI
+    jtag = new JTAG
+    usb = new USB2
+    usb_pd = new USB_PD
+
+    # Add ESP32 (incl. EN button + BOOT button)
+    esp32 = new ESP32_WROOM_32E_N8R2
+    esp32.power ~ power_3_3v
+    esp32.uart ~ uart
+    esp32.i2c ~ i2c
+    esp32.i2s ~ i2s
+    esp32.spi ~ spi
+    esp32.jtag ~ jtag
+    
+    # Connected pins besides default pins:
+    # IO5: LED Strips power on/off
+    # IO33: LED Ring power onoff
+    # IO16: LED strip 1 (data out)
+    # IO17: LED strip 2 (data out)
+    # IO18: LED strip 3 (data out)
+    # IO19: LED strip 4 (data out)
+    # IO2: Actionbutton LED ring (data out)
+    # IO27: GPIO27 (and pin used for SparkFun DMX shield, just in case)
+    # IO0: Boot button (pulled low if pressed)
+    # IO34: Actionbutton (high if button pressed, low if not pressed)
+    # IO35: Slider switch (LOW: GlowLight mode, HIGH: GlowTower mode)
+    # IO36: USB detection (HIGH if USB connected)
+    # IO25: I2S SCK
+    # IO26: I2S SD
+    # IO23: I2S WS
+
+    # TODO add USB-C connector (3A at 5V max)
+
+    # TODO: add ESD protection?
+
+    # Add USB to serial via CP2102N
+    usb_to_serial = new CP2102N
+    usb_to_serial.uart.rx ~ uart.tx
+    usb_to_serial.uart.tx ~ uart.rx
+    usb_to_serial.usb ~ usb

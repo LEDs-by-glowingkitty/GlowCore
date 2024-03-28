@@ -38,3 +38,13 @@ fp-info-cache
 
 cnc
 lasercutter
+
+# Virtual environment
+.venv/
+venv/
+
+# .ato directory
+.ato/
+
+# IDEs
+.vscode/

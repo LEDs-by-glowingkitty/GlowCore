@@ -1,0 +1,9 @@
+ato-version: ^0.2.0
+builds:
+  default:
+    entry: elec/src/glowcore.ato:Glowcore
+dependencies:
+- name: generics
+  version_spec: '@bdb8ca8f4cbd67e0ba7afa9cbe879d673e171b58'
+  link_broken: true
+  path: elec/src/generics
